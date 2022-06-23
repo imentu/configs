@@ -84,6 +84,16 @@ _G.packer_plugins = {
     path = "C:\\Users\\zz\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lush.nvim",
     url = "https://github.com/rktjmp/lush.nvim"
   },
+  ["nvim-lsp-installer"] = {
+    loaded = true,
+    path = "C:\\Users\\zz\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lsp-installer",
+    url = "https://github.com/williamboman/nvim-lsp-installer"
+  },
+  ["nvim-lspconfig"] = {
+    loaded = true,
+    path = "C:\\Users\\zz\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
+  },
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "C:\\Users\\zz\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-tree.lua",
