@@ -37,4 +37,6 @@ return require('packer').startup(function()
   use 'rafamadriz/friendly-snippets'
   -- lspkind
   use 'onsails/lspkind-nvim'
+  -- terminal
+  use 'voldikss/vim-floaterm'
 end)

@@ -37,6 +37,16 @@ map('n', '<A-1>', ':NvimTreeToggle<CR>', opt)
 map("n", "<A-h>", ":BufferLineCyclePrev<CR>", opt)
 map("n", "<A-l>", ":BufferLineCycleNext<CR>", opt)
 
+-- float terminal
+-- toggle
+map("n", "<A-`>", ":FloatermToggle<CR>", opt)
+map("t", "<A-`>", "<C-\\><C-n>:FloatermToggle<return>", opt)
+-- change
+map("t", "<A-[>", "<C-\\><C-n>:FloatermPrev<return>", opt)
+map("t", "<A-]>", "<C-\\><C-n>:FloatermNext<return>", opt)
+-- new
+map("t", "<F12>", "<C-\\><C-n>:FloatermNew<return>", opt)
+
 local pluginKeys = {}
 
 -- lsp callback keybindings setting
