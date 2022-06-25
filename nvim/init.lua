@@ -4,6 +4,8 @@ require('keybindings')
 
 require('plugin-config/nvim-tree')
 require('plugin-config/bufferline')
+require('plugin-config/telescope')
+require('plugin-config/lualine')
 
 require('lsp/setup')
 require('lsp/nvim-cmp')

@@ -39,4 +39,9 @@ return require('packer').startup(function()
   use 'onsails/lspkind-nvim'
   -- terminal
   use 'voldikss/vim-floaterm'
+  -- status line
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
 end)
