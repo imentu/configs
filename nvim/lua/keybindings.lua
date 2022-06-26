@@ -2,10 +2,11 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 -- save local variable
+-- you can mapping keybindings with map('mode','key','operation',opt)
 local map = vim.api.nvim_set_keymap
 local opt = {noremap = true, silent = true }
 
--- you can mapping keybindings with map('mode','key','operation',opt)
+--
 map("n", "<C-u>", "9k", opt)
 map("n", "<C-d>", "9j", opt)
 
@@ -54,7 +55,7 @@ pluginKeys.maplsp = function(mapbuf)
   -- rename
   mapbuf('n', '<leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', opt)
   -- code action
-  mapbuf('n', '<space>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>', opt)
+  mapbuf('n', '<leader>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>', opt)
   -- go xx
   mapbuf('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', opt)
   mapbuf('n', 'gh', '<cmd>lua vim.lsp.buf.hover()<CR>', opt)
