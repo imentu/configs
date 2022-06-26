@@ -37,6 +37,7 @@ map('n', '<A-1>', ':NvimTreeToggle<CR>', opt)
 -- bufferline
 map("n", "<A-h>", ":BufferLineCyclePrev<CR>", opt)
 map("n", "<A-l>", ":BufferLineCycleNext<CR>", opt)
+map("n", "<A-w>", ":BufferLinePickClose<CR>", opt)
 
 -- float terminal
 -- toggle
